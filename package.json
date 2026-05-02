@@ -1,0 +1,33 @@
+{
+  "name": "azeel-node-api",
+  "version": "0.1.0",
+  "description": "Node.js client for the Azeel.net remote HTTP API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "azeel",
+    "api"
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "typescript": "5.4"
+  }
+}
